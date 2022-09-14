@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    
+    <div id="navBar">
+        <div class="icon">
+            <img src="images/edu.jpg" alt="" id="eduIcon">
+            <h1>NCI</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="http://localhost:3000/student">Students</a></li>
+                <li><a href="result.html">Register</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="moveRight">
+            <input type="text" name="search" id="search" placeholder="search">
+            <button id="btn">Search</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="http://localhost:3000/nci" method="post">
+            <div class="contact">
+                <input type="text" name="name" placeholder="enter your name" class="contactInput">
+                <input type="number" name="number" placeholder="enter your phone no." class="contactInput">
+                <input type="email" name="email" placeholder="enter your email" class="contactInput">
+                <input type="text" name="address" placeholder="enter your address" class="contactInput">
+                <textarea name="concern" id="" cols="30" rows="10" placeholder="enter your concern" class="concernInput"></textarea>
+                <button class="contactSubmit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

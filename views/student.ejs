@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students List</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <h1>Students List </h1>
+    <% for(st of data){%>
+        <ul>
+            <li><%= st.roll%>: <%= st.name %></a></li>
+            <button><a href="/student/<%= st._id%>">Details</a></button>
+        </ul>
+    <%}
+    %>
+</body>
+</html>
