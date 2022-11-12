@@ -5,7 +5,7 @@ const mongoose=require('mongoose');
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb://localhost:27017/results');
+  await mongoose.connect('mongodb+srv://nihal_kv:Knit20234@cluster0.rbvj59r.mongodb.net/results');
 }
 
 const registerSchema = new mongoose.Schema({
